@@ -10,9 +10,7 @@ function App() {
 
   const onClick = async () => {
     try {
-      const result = await axios.get(
-        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
-      );
+      const result = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
       console.log(result.data);
       setWeather(result.data);
     } catch (err) {
