@@ -15,7 +15,7 @@ function App() {
       setWeather(result.data);
     } catch (err) {
       console.log(err.message, ":City Not Found");
-      alert("City Not Found!");
+      // alert("City Not Found!");
       setWeather("");
     }
   };
